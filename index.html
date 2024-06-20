@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Персонална Веб страница</title>
+</head>
+
+<body>
+
+    <div id="home">
+
+        <header>
+            <nav>
+                <li><a href="#home">ДОМА</a></li>
+                <li><a href="#biography">БИОГРАФИЈА</a></li>
+                <li><a href="#education">ОБРАЗОВАНИЕ</a></li>
+                <li><a href="#hobbies">ХОБИ</a></li>
+                <li><a href="#contact">КОНТАКТ</a></li>
+            </nav>
+        </header>
+
+        <div class="title-wrapper">
+
+            <div class="hidden content-wrapper margin-r padding social-links">
+                <a href="mailto:bage.josifoska@gmail.com" target="_blank"><img src="images/mail.png"
+                        alt="Mail Icon"></a>
+                <a href="https://github.com/bagel047" target="_blank"><img src="images/github.png"
+                        alt="Github Logo"></a>
+                <a href="http://discordapp.com/users/763031016108589057" target="_blank"><img src="images/discord.png"
+                        alt="Discord Logo"></a>
+                <a href="https://www.instagram.com/bage_x/" target="_blank"><img src="images/instagram.png"
+                        alt="Instagram Logo"></a>
+            </div>
+
+            <div class="title hidden">
+                <h2>Благица</h2>
+                <h2>Јосифоска</h2><br>
+                <a href="#biography"><button>Повеќе</button></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="content-wrapper">
+
+        <section id="biography" class="section-row">
+            <img class="item hidden" src="images/bio.jpg" alt="Bio Image">
+
+            <div class="item hidden">
+                <h2>БИОГРАФИЈА</h2>
+                <p>Моето име е Благица Јосифоска и имам 19 години. Родена сум и живеам во Тетово. Во моментов студирам
+                    на Факултетот за информатички науки и компјутерско инженерство при УКИМ - Скопје.</p>
+            </div>
+        </section>
+
+        <section id="education">
+
+            <h2 class="hidden align margin-b">ОБРАЗОВАНИЕ</h2>
+
+            <div class="section-row">
+                <div class="item hidden card">
+                    <img src="images/osnovno.jpg" alt="Основно училиште 'Гоце Делчев' - Тетово">
+                    <h3>Основно образование</h3>
+                    <p>Своето образование го започнав во ООУ "Гоце Делчев" - Тетово.</p>
+                </div>
+
+                <div class="item hidden card">
+                    <img src="images/sredno.jpg" alt="Средно училиште 'Кирил Пејчиновиќ' - Тетово">
+                    <h3>Средно образование</h3>
+                    <p>Средно училиште имам завршено во СОУГ "Кирил Пејчиновиќ" - Тетово.</p>
+                </div>
+
+                <div class="item hidden card">
+                    <img src="images/finki.png" alt="ФИНКИ - УКИМ - Скопје">
+                    <h3>Високо образование</h3>
+                    <p>Во моментов студирам на ФИНКИ при УКИМ - Скопје.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="hobbies">
+
+            <h2 class="hidden align margin-b">ХОБИ</h2>
+
+            <div class="item row hidden">
+                <img src="images/filmstrip.png" alt="Filmstrip Image">
+                <p>Едно од моите хобиња е гледањето разни филмови, серии и едукативни емисии.</p>
+            </div>
+
+            <div class="item row-reverse hidden">
+                <img id="controller-img" src="images/controller.png" alt="Controller Image">
+                <p>Исто така, во моето слободно време играм видео игри.</p>
+            </div>
+
+            <div class="item row hidden">
+                <img src="images/bike.png" alt="Bicycle Image">
+                <p>Возењето велосипед е уште едно мое хоби.</p>
+            </div>
+
+        </section>
+
+        <section id="contact">
+
+            <h2>Контакт</h2>
+
+            <div>
+                <a href="mailto:bage.josifoska@gmail.com" target="_blank"><img src="images/mail.png" alt="Mail Icon"
+                        class="margin-r"></a>
+                <a href="https://github.com/bagel047" target="_blank"><img src="images/github.png" alt="Github Logo"
+                        class="margin-r"></a>
+                <a href="http://discordapp.com/users/763031016108589057" target="_blank"><img src="images/discord.png"
+                        alt="Discord Logo" class="margin-r"></a>
+                <a href="https://www.instagram.com/bage_x/" target="_blank"><img src="images/instagram.png"
+                        alt="Instagram Logo" class="margin-r"></a>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <span>&#169; Copyright Blagica Josifoska 2024</span>
+    </footer>
+
+    <script defer src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: Roboto;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+body {
+    background-color: gainsboro;
+}
+
+h3 {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+section h2 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+}
+
+.margin-b {
+    margin-bottom: 5em;
+}
+
+.margin-r {
+    margin-right: 0.5em;
+}
+
+.padding {
+    padding: 10px;
+}
+
+.align {
+    margin-left: 15em;
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+
+    position: fixed;
+    z-index: 99;
+
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
+    background-color: transparent;
+
+    color: white;
+}
+
+.scrolled {
+    background-color: black;
+}
+
+#home {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url(images/background.jpg);
+    background-repeat: no-repeat;
+
+    margin-bottom: 15em;
+}
+
+nav {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav li:first-child {
+    margin-left: 30em;
+}
+
+nav li:last-child {
+    margin-right: 30em;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+li a:hover {
+    color: rgb(195, 71, 71);
+    border-bottom: 2px solid white;
+    transform: translateY(-8px);
+}
+
+.title-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 100vh;
+    width: 100%;
+}
+
+.title-wrapper a {
+    margin-bottom: 0.5em;
+}
+
+.social-links:last-child,
+section:last-child {
+    margin-bottom: 0;
+}
+
+.social-links a:hover {
+    transform: translateX(-5px);
+    transition-duration: 0.5s;
+}
+
+.title {
+    /* background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .3)); */
+    padding: 30px 10px;
+
+    width: 20%;
+    margin-right: 15%;
+    text-align: right;
+
+    color: white;
+    letter-spacing: 5px;
+    font-size: 28px;
+
+    border-left: 3px solid whitesmoke;
+}
+
+.title button {
+    position: relative;
+    right: 0;
+
+    min-width: 80%;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 12px;
+
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .3));
+    transition: all 0.3s;
+}
+
+.title button:hover {
+    cursor: pointer;
+    background-color: rgb(195, 71, 71);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-8px);
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-row {
+    display: flex;
+    flex: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section {
+    background-color: whitesmoke;
+    width: 100%;
+    margin-bottom: 15em;
+    padding: 130px 80px 130px 80px;
+}
+
+.content-wrapper #biography {
+    align-items: center;
+}
+
+.item {
+    padding: 10px;
+    margin-right: 0;
+}
+
+.item:first-child {
+    margin-left: 15em;
+}
+
+.item:last-child {
+    margin-right: 15em;
+}
+
+#biography img {
+    border-radius: 340px 120px;
+}
+
+#education img {
+    /* box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5); */
+    border-radius: 3px;
+}
+
+#biography h3,
+#education h3,
+#education img {
+    margin-bottom: 1em;
+}
+
+#education {
+    justify-content: space-evenly;
+}
+
+.card:nth-child(2),
+#biography .item:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.card:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+
+    height: 100%;
+    width: 20%;
+    padding-top: 20px;
+    border-top: 2px solid black;
+}
+
+.card:not(:last-child) {
+    margin-right: 2.2em;
+}
+
+.card p {
+    width: 95%;
+    text-align: justify;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    margin-left: 15em;
+    margin-bottom: 10em;
+
+    border-left: 2px solid black;
+}
+
+.row-reverse {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+
+    margin-right: 15em;
+    margin-bottom: 10em;
+
+    border-right: 2px solid black;
+}
+
+.row *,
+.row-reverse *,
+#contact {
+    padding: 40px 60px;
+}
+
+#controller-img {
+    rotate: 20deg;
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer span {
+    font-size: 11px;
+    position: relative;
+    top: 50%;
+}
